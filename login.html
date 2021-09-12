@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+    .error
+    {
+    font-size:15px;
+    font-weight:bold;
+    color:#F00;
+    }
+     nav{ z-index:30; position:absolute; top:0;}
+nav img{ width: 150px;}
+a.nav-link {color:white; font-weight: bold; padding:0 25px; font-size: 16px; }
+a.nav-link:hover {color:yellow;}
+@media (max-width: 991px) {.navbar-collapse {position: fixed;top: 0px; left: 0; padding-left: 15px; padding-right: 15px; padding-bottom: 15px; width: 45%; height: 100%;}
+.navbar-collapse.collapsing {left: -75%; transition: height 0s ease; }
+.navbar-collapse.show {left: 0; transition: left 300ms ease-in-out;}
+.navbar-toggler.collapsed ~ .navbar-collapse {transition: left 500ms ease-in-out; }
+#navbarCollapse{background-color: #313c4e;}
+.navbar ul{ padding-top:20px; padding-left:25px;}
+.navbar-toggler{border:none; }
+.navbar li{ padding-bottom: 10px;}}
+.navbar-collapse{position:relative; bottom:20px;}
+@media (max-width: 457px) {.navbar-collapse { width: 69%; }}
+nav .active a{color:yellow;}
+.f-section2 img{padding-top:50px;}
+@media(max-width:992px){.f-section2 img{padding-left:20px;width:180px;}}
+@media(max-width:767px){.f-section2 img{padding-left:0px; width:200x;}}
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="login/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="login/css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="login/css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="login/css/style.css">
+
+    <title>Login #7</title>
+  </head>
+  <body>
+  
+<nav style="background-color:#4863A0" class="navbar navbar-expand-lg "> 
+  <a class="navbar-brand" href="index.html"><img id="logo-img" src="images/logo2.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon">
+    <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+  </span>  
+  <!-- <span class="navbar-toggler-icon"></span>   -->
+  </button>
+  <div class="collapse navbar-collapse " id="navbarCollapse">
+    <!-- bg-dark -->
+    <ul class="navbar-nav ml-auto" style="padding-right: 25px;">
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <!-- <div class="dropdown"> -->
+          <a href="academics.html"class="nav-link">ACADEMICS</a>
+          <!-- <div class="dropdown-content">
+            <a href="subpage/admission/admission.html">India</a>
+            <a href="subpage/admission/admission.html#section5">International</a>
+          </div> -->
+        <!-- </div> -->
+      </li>
+      <li class="nav-item">
+          <a href="apply.html"class="nav-link">APPLY NOW</a>
+      </li>
+    
+      <li class="nav-item">
+          <a href="contact.html"class="nav-link">CONTACT US</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">ABOUT US</a>
+      </li>
+        <li class="nav-item active">
+          <a href="#"class="nav-link">LOGIN </a>
+      </li>
+    </ul>
+
+    </div>
+    </nav>
+  
+  <div class="content" style="background-color:#800080">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/reg3.jpg" style="width: 100%;height: 70%"alt="Image" class="img-fluid">
+        </div>
+        <div class="col-md-6 contents">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="mb-4">
+              <h3>Log In</h3>
+              <p class="mb-4">Use the valid credentials for log in.</p>
+              <p style="font-weight: bold;"></p>
+            </div>
+            <form action="action.php?pid=4" method="post" name="form">
+              <div class="form-group first">
+                <label for="username">Username</label>                
+                <input type="text" class="form-control" id="username" name="uid">
+                <div class="error" id='u'></div>
+
+              </div>
+              <div class="form-group last mb-4">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="pass">
+                <div class="error" id='p'></div>
+                
+              </div>
+              
+              
+              <input type="submit" name="Submit" value="Log In" class="btn btn-block btn-primary">              
+              
+            </form>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+    <script src="login/js/jquery-3.3.1.min.js"></script>
+    <script src="login/js/popper.min.js"></script>
+    <script src="login/js/bootstrap.min.js"></script>
+    <script src="login/js/main.js"></script>
+  
+  </body>
+</html>
